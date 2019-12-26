@@ -15,7 +15,7 @@ const getFadeContainerKeyFrame = ({ animatingOut, direction }) => {
 const FadeContainer = styled.div`
   ${promoteLayer}
   animation-name: ${getFadeContainerKeyFrame};
-  animation-duration: ${0}ms;
+  animation-duration: ${(props => props.duration / 2)}ms;
   animation-fill-mode: forwards;
   opacity: ${props => (props.direction && !props.animatingOut ? 0 : 1)};
   top: 0;
