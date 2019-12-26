@@ -1,3 +1,14 @@
-import React from "react"
+import React, { Component } from "react";
+import AnimatedNavbar from '../navbar'
 
-export default () => <div>Hello world!</div>
+export default class Index extends Component {
+    state = { duration: 300 }
+
+    render() {
+        return (
+            <>
+                <AnimatedNavbar duration={this.state.duration} />
+            </>
+        )
+    }
+}
