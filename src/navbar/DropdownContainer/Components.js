@@ -28,6 +28,20 @@ export const DropdownRoot = styled.div`
     align-items: center;
     position: relative;
     top: -20px;
+    .first {
+        @media(min-width: 760px){
+            transform: translateX(190px);
+            max-width: 800px;
+        }
+    }
+    .second, .third {
+        @media(min-width: 760px){
+            transform: translateX(-120px);
+        }
+        @media(max-width: 760px){
+            transform: translateX(-50px)
+        }
+    }
 `
 
 export const Caret = styled.div`

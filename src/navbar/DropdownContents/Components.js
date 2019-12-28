@@ -8,7 +8,7 @@ export const DropdownEl = styled.div`
 export const DropdownSection = styled.div`
     display: flex;
     z-index: 1;
-    @media (max-width: 700px) {
+    @media (max-width: 760px) {
         display: block;
     }
 `

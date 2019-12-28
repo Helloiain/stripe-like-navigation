@@ -11,11 +11,11 @@ import { ProgrammingAndTechDropdown } from './DropdownContents/ProgrammingAndTec
 import { VideoAndAnimationDropdown } from './DropdownContents/VideoAndAnimation'
 
 const navbarConfig = [
-    { title: "Graphics & Design", dropdown: GraphicsAndDesignDropdown },
-    { title: "Digital Marketing", dropdown: DigitalMarketingDropdown },
-    { title: "Writing & Translation", dropdown: WritingAndTranslationDropdown },
-    { title: "Video & Animation", dropdown: VideoAndAnimationDropdown },
-    { title: "Programming & Tech", dropdown: ProgrammingAndTechDropdown }
+    { title: "Graphics & Design", dropdown: GraphicsAndDesignDropdown, className: "first" },
+    { title: "Digital Marketing", dropdown: DigitalMarketingDropdown, className: null },
+    { title: "Writing & Translation", dropdown: WritingAndTranslationDropdown, className: null },
+    { title: "Video & Animation", dropdown: VideoAndAnimationDropdown, className: "second" },
+    { title: "Programming & Tech", dropdown: ProgrammingAndTechDropdown, className: "third" }
 ]
 
 class AnimatedNavbar extends Component {
@@ -95,6 +95,7 @@ class AnimatedNavbar extends Component {
                                     <DropdownContainer
                                         direction={direction}
                                         animatingOut={this.state.animatingOut}
+                                        className={n.className}
                                         duration={duration}
                                     >
                                         <CurrentDropdown />

@@ -1,5 +1,5 @@
 import React from 'react'
-import {DropdownEl, DropdownSection, Heading, ListSection} from './Components.js'
+import { DropdownEl, DropdownSection, Heading, ListSection } from './Components.js'
 
 export const GraphicsAndDesignDropdown = () => {
     return (

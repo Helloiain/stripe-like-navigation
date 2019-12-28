@@ -14,14 +14,15 @@ class DropdownContainer extends Component {
         children: PropTypes.node.isRequired,
         animatingOut: PropTypes.bool,
         direction: PropTypes.oneOf(["left", "right"]),
-        duration: PropTypes.number
+        duration: PropTypes.number,
+        className: PropTypes.string
     }
 
     currentDropdownEl = createRef()
     prevDropdownEl = createRef()
 
     render() {
-        const { children, direction, animatingOut, duration } = this.props
+        const { children, direction, animatingOut, duration, className } = this.props
         const [currentDropdown, prevDropdown] = Children.toArray(children)
         return (
             <DropdownRoot
@@ -33,7 +34,8 @@ class DropdownContainer extends Component {
                     <Caret />
                 </Flipped>
                 <Flipped flipId="dropdown">
-                    <DropdownBackground>
+                    <DropdownBackground
+                        className={className}>
                         <Flipped inverseFlipId="dropdown">
                             <InvertedDiv>
                                 <FadeContents
