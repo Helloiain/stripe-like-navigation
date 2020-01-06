@@ -16,9 +16,6 @@ const Logo = styled.span`
 
 const SignIn = styled.span`
   font-size: 1.2rem;
-  @media(max-width: 790px){
-    display: none;
-  }
 `
 
 const NavbarList = styled.ul`
