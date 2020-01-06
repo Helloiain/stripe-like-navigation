@@ -1,10 +1,25 @@
 import React from 'react'
-import { DropdownEl, DropdownSection, Heading, ListSection } from './Components.js'
+import { DropdownEl, DropdownSection, Heading, ListSection, Logo, DropdownTitle, DropdownButton, ListPrimary } from './Components.js'
+import ImagePlaceholder from '../assets/IMAGE_PLACEHOLDER.png'
 
 export const GraphicsAndDesignDropdown = () => {
     return (
         <DropdownEl>
             <DropdownSection>
+                <ListPrimary>
+                    <li>
+                        <Logo src={ImagePlaceholder} />
+                    </li>
+                    <li>
+                        <DropdownTitle>Graphics & Design</DropdownTitle>
+                    </li>
+                    <li>
+                        Bring Your vision to life with the assistance of one of out artists.
+                    </li>
+                    <li>
+                        <DropdownButton>All Graphics & Design Services</DropdownButton>
+                    </li>
+                </ListPrimary>
                 <ListSection>
                     <li>
                         <Heading>Logo & Brand Identity</Heading>
@@ -29,6 +44,15 @@ export const GraphicsAndDesignDropdown = () => {
                     </li>
                     <li>
                         Banner Ads
+                    </li>
+                    <li>
+                        <Heading>Product & Characters Design</Heading>
+                    </li>
+                    <li>
+                        3D Modeling & Product Design
+                    </li>
+                    <li>
+                        Character Modeling
                     </li>
                 </ListSection>
                 <ListSection>
@@ -55,6 +79,18 @@ export const GraphicsAndDesignDropdown = () => {
                     </li>
                     <li>
                         Invitation Design
+                    </li>
+                    <li>
+                        <Heading>Architecture & Building Design</Heading>
+                    </li>
+                    <li>
+                        Architecture & Interior Design
+                    </li>
+                    <li>
+                        Landscape Design
+                    </li>
+                    <li>
+                        Building Information Modeling
                     </li>
                 </ListSection>
                 <ListSection>
@@ -84,29 +120,6 @@ export const GraphicsAndDesignDropdown = () => {
                     </li>
                     <li>
                         Vector Tracing
-                    </li>
-                </ListSection>
-                <ListSection>
-                    <li>
-                        <Heading>Architecture & Building Design</Heading>
-                    </li>
-                    <li>
-                        Architecture & Interior Design
-                    </li>
-                    <li>
-                        Landscape Design
-                    </li>
-                    <li>
-                        Building Information Modeling
-                    </li>
-                    <li>
-                        <Heading>Product & Characters Design</Heading>
-                    </li>
-                    <li>
-                        3D Modeling & Product Design
-                    </li>
-                    <li>
-                        Character Modeling
                     </li>
                     <li>
                         <Heading>Merchandise</Heading>

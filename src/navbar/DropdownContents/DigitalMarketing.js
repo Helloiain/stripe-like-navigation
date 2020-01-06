@@ -1,10 +1,25 @@
 import React from 'react'
-import { DropdownEl, DropdownSection, Heading, ListSection} from './Components.js'
+import ImagePlaceholder from '../assets/IMAGE_PLACEHOLDER.png'
+import { DropdownEl, DropdownSection, Heading, ListSection, Logo, ListPrimary, DropdownButton, DropdownTitle} from './Components.js'
 
 export const DigitalMarketingDropdown = () => {
     return (
         <DropdownEl>
             <DropdownSection>
+                <ListPrimary>
+                    <li>
+                        <Logo src={ImagePlaceholder} />
+                    </li>
+                    <li>
+                        <DropdownTitle>Digital Marketing</DropdownTitle>
+                    </li>
+                    <li>
+                        Bring Your vision to life with the assistance of one of out artists.
+                    </li>
+                    <li>
+                        <DropdownButton>All Digital Marketing Services</DropdownButton>
+                    </li>
+                </ListPrimary>
                 <ListSection>
                     <li>
                         <Heading>Social & Content</Heading>

@@ -1,15 +1,16 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
+import {DropdownBackground} from '../DropdownContainer/Components.js'
+import {DropdownSection} from '../DropdownContents/Components.js'
 
 const NavbarItemTitle = styled.button`
     background: transparent;
     border: 0;
-    font-weight: bold;
     font-family: inherit;
-    font-size: 14px;
-    padding: 1rem 1rem 2rem 0;
-    color: #000;
+    font-size: 1.2rem;
+    color: rgba(126,126,126,1);
+    padding-right: 1rem;
     display: flex;
     justify-content: center;
     transition: opacity 250ms;
@@ -25,6 +26,39 @@ const NavbarItemTitle = styled.button`
 
 const NavbarItemEl = styled.li`
     position: relative;
+    ${DropdownSlot}:nth-child(1) ${DropdownBackground}{
+        left: 150px;
+        @media(max-width:790px){
+            width: 600px;
+            ${DropdownSection} {
+                display: flex;
+            }
+        }
+    }
+    ${DropdownSlot}:nth-child(2) ${DropdownBackground}{
+        left: 50px;
+        @media(max-width:790px){
+            width: 600px;
+        }
+    }
+    ${DropdownSlot}:nth-child(3) ${DropdownBackground}{
+        left: -50px;
+        @media(max-width:790px){
+            width: 600px;
+        }
+    }
+    ${DropdownSlot}:nth-child(4) ${DropdownBackground}{
+        left: -150px;
+        @media(max-width:790px){
+            width: 600px;
+        }
+    }
+    ${DropdownSlot}:nth-child(5) ${DropdownBackground}{
+        left: -260px;
+        @media(max-width:790px){
+            width: 600px;
+        }
+    }
 `
 
 const DropdownSlot = styled.div`

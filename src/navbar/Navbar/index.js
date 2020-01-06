@@ -3,22 +3,31 @@ import styled from "styled-components"
 
 const NavbarEl = styled.nav`
   display: flex;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
+  padding-top: 2rem;
   justify-content: space-between;
-  font-size: 14px;
 `
 
 const Logo = styled.span`
-  padding-top: 1rem;
   font-weight: bold;
   font-size: 18px;
+`
+
+const SignIn = styled.span`
+  font-size: 1.2rem;
+  @media(max-width: 790px){
+    display: none;
+  }
 `
 
 const NavbarList = styled.ul`
   display: flex;
   list-style: none;
-  margin: 0;
+  margin: 0 0 0 250px;
+  @media(max-width: 790px) {
+    margin: 0;
+  }
 `
 
 class Navbar extends Component {
@@ -28,6 +37,7 @@ class Navbar extends Component {
       <NavbarEl onMouseLeave={onMouseLeave}>
         <Logo>DIVERSE</Logo>
         <NavbarList>{children}</NavbarList>
+        <SignIn>Sign in 🡢</SignIn>
       </NavbarEl>
     )
   }

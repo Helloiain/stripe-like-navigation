@@ -1,5 +1,15 @@
 import React, { Component } from "react";
 import AnimatedNavbar from '../navbar'
+import {createGlobalStyle} from 'styled-components'
+
+const GlobalStyle = createGlobalStyle`
+    @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+    * {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 11px;
+        color: rgba(123,123,123,1);
+    }
+`
 
 export default class Index extends Component {
     state = { duration: 300 }
@@ -7,6 +17,7 @@ export default class Index extends Component {
     render() {
         return (
             <>
+                <GlobalStyle />
                 <AnimatedNavbar duration={this.state.duration} />
             </>
         )
