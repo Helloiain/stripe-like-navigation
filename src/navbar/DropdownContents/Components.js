@@ -11,8 +11,8 @@ export const DropdownSection = styled.div`
 
 export const Heading = styled.h3`
   font-weight: bold;
-  font-size: 1.2rem;
-  color: rgba(126,126,126,1);
+  margin: 1rem 0 0.5rem 0;
+  color: rgba(126, 126, 126, 1);
 `
 
 export const HeadingLink = Heading.withComponent(`li`)
@@ -29,9 +29,9 @@ export const DropdownTitle = styled.h1`
 
 export const DropdownButton = styled.div`
   background-color: #fff
-  padding: .5rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  padding: .75rem;
+  white-space: nowrap;
+  margin: 1.5rem 0;
   font-weight: bold;
   color: rgba(19, 103, 204, 1);
   border-radius: 4px;
@@ -40,19 +40,17 @@ export const DropdownButton = styled.div`
 
 export const ListPrimary = styled.ul`
   background-color: rgba(247, 249, 252, 1);
-  padding: 1.5rem 1.5rem;
+  padding: 2rem;
+  margin-right: 3rem;
   list-style-type: none;
-  li {
-    width: 175px;
-  }
 `
 
 export const ListSection = styled.ul`
-  padding: 1.5rem 1rem;
+  padding: 3rem;
+  padding-left: 0;
   list-style-type: none;
   li {
-    width: 175px;
     display: flex;
-    
+    white-space: nowrap;
   }
 `

@@ -46,7 +46,7 @@ export const Caret = styled.div`
 export const DropdownBackground = styled.div`
   transform-origin: 0 0;
   background-color: #fff;
-  border-radius: 4px;
+  border-radius: 10px;
   overflow: hidden;
   position: relative;
   box-shadow: 1px 2px 18px rgba(0, 0, 0, 0.2);

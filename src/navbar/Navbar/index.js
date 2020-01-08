@@ -6,25 +6,24 @@ const NavbarEl = styled.nav`
   max-width: 1200px;
   margin: 0 auto;
   padding-top: 2rem;
-  justify-content: space-between;
 `
 
 const Logo = styled.span`
   font-weight: bold;
   font-size: 18px;
+  line-height: 16px;
+  margin: 0 auto 0 0;
 `
 
 const SignIn = styled.span`
-  font-size: 1.2rem;
+  color: rgba(126, 126, 126, 1);
+  margin: 0 0 0 2rem;
 `
 
 const NavbarList = styled.ul`
   display: flex;
   list-style: none;
-  margin: 0 0 0 250px;
-  @media(max-width: 790px) {
-    margin: 0;
-  }
+  margin: 0;
 `
 
 class Navbar extends Component {
