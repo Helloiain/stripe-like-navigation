@@ -45,11 +45,18 @@ export const Caret = styled.div`
 
 export const DropdownBackground = styled.div`
   transform-origin: 0 0;
-  background-color: #fff;
   border-radius: 10px;
   overflow: hidden;
   position: relative;
   box-shadow: 1px 2px 18px rgba(0, 0, 0, 0.2);
+  &:before {
+    content: "";
+    z-index: -1;
+    width: 280px;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(247, 249, 252, 1);
+  }
 `
 
 export const InvertedDiv = styled.div`

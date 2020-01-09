@@ -12,7 +12,7 @@ import {
 import ImagePlaceholder from "../assets/IMAGE_PLACEHOLDER.png"
 
 export const GraphicsAndDesignDropdown = () => {
-  const condition = window.innerWidth <= 950
+  const condition = window.innerWidth <= 990
   return <>{condition ? <Compact /> : <Primary />}</>
 }
 

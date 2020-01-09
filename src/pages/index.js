@@ -9,6 +9,10 @@ const GlobalStyle = createGlobalStyle`
         font-size: 14px;
         color: rgba(123,123,123,1);
     }
+    body {
+      max-width: 100%;
+      overflow-x: hidden;
+    }
 `
 
 export default class Index extends Component {

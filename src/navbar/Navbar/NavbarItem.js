@@ -24,13 +24,13 @@ const NavbarItemTitle = styled.span`
 const NavbarItemEl = styled.li`
   position: relative;
   ${DropdownSlot}:nth-child(1) ${DropdownBackground} {
-    left: 170px;
+    left: 200px;
     @media(max-width: 937px){
-      left: 220px;
+      left: 250px;
     }
   }
   ${DropdownSlot}:nth-child(2) ${DropdownBackground} {
-    left: 130px;
+    left: 115px;
   }
   ${DropdownSlot}:nth-child(3) ${DropdownBackground} {
     left: -20px;
