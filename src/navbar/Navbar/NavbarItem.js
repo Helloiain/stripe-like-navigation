@@ -21,6 +21,13 @@ const NavbarItemTitle = styled.span`
   }
 `
 
+const DropdownSlot = styled.div`
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  perspective: 1500px;
+`
+
 const NavbarItemEl = styled.li`
   position: relative;
   ${DropdownSlot}:nth-child(1) ${DropdownBackground} {
@@ -41,13 +48,6 @@ const NavbarItemEl = styled.li`
   ${DropdownSlot}:nth-child(5) ${DropdownBackground} {
     left: -260px;
   }
-`
-
-const DropdownSlot = styled.div`
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  perspective: 1500px;
 `
 
 class NavbarItem extends Component {
